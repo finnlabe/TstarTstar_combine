@@ -21,7 +21,7 @@ for masspoint in masspoints:
     
     if (args.doVR and args.doSpin12):
         os.system(
-            "combineCards.py mu={0}_pt_ST_mu_VR.dat ele={0}_pt_ST_ele_SR.dat > {0}_pt_ST_total_VR.dat".format(masspoint)
+            "combineCards.py mu={0}_pt_ST_mu_VR.dat ele={0}_pt_ST_ele_VR.dat > {0}_pt_ST_total_VR.dat".format(masspoint)
         )
         
     if (args.doSR and args.doSpin32):
@@ -31,5 +31,5 @@ for masspoint in masspoints:
     
     if (args.doVR and args.doSpin32):
         os.system(
-            "combineCards.py mu={0}_pt_ST_mu_VR_Spin32.dat ele={0}_pt_ST_ele_SR_Spin32.dat > {0}_pt_ST_total_VR_Spin32.dat".format(masspoint)
+            "combineCards.py mu={0}_pt_ST_mu_VR_Spin32.dat ele={0}_pt_ST_ele_VR_Spin32.dat > {0}_pt_ST_total_VR_Spin32.dat".format(masspoint)
         )

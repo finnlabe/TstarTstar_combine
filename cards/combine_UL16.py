@@ -12,6 +12,10 @@ masspoints = [700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 180
 
 channels = ["mu", "ele", "total"]
 
+# copying over the root files
+os.system("cp UL16preVFP/*.root UL16/UL16preVFP/")
+os.system("cp UL16postVFP/*.root UL16/UL16postVFP/")
+
 for channel in channels:
     
     print("Combining {}".format(channel))
@@ -22,20 +26,20 @@ for channel in channels:
 
         if (args.doSR and args.doSpin12):
             os.system(
-                "combineCards.py UL16preVFP=UL16preVFP/{0}_pt_ST_{1}_SR.dat UL16postVFP=UL16postVFP/{0}_pt_ST_{1}_SR.dat UL17=UL17/{0}_pt_ST_{1}_SR.dat UL18=UL18/{0}_pt_ST_{1}_SR.dat > {0}_pt_ST_{1}_SR.dat".format(masspoint, channel)
+                "combineCards.py UL16preVFP=UL16preVFP/{0}_pt_ST_{1}_SR.dat UL16postVFP=UL16postVFP/{0}_pt_ST_{1}_SR.dat > UL16/{0}_pt_ST_{1}_SR.dat".format(masspoint, channel)
             )
 
         if (args.doVR and args.doSpin12):
             os.system(
-                "combineCards.py UL16preVFP=UL16preVFP/{0}_pt_ST_{1}_VR.dat UL16postVFP=UL16postVFP/{0}_pt_ST_{1}_VR.dat UL17=UL17/{0}_pt_ST_{1}_VR.dat UL18=UL18/{0}_pt_ST_{1}_VR.dat > {0}_pt_ST_{1}_VR.dat".format(masspoint, channel)
+                "combineCards.py UL16preVFP=UL16preVFP/{0}_pt_ST_{1}_VR.dat UL16postVFP=UL16postVFP/{0}_pt_ST_{1}_VR.dat > UL16/{0}_pt_ST_{1}_VR.dat".format(masspoint, channel)
             )
 
         if (args.doSR and args.doSpin32):
             os.system(
-                "combineCards.py UL16preVFP=UL16preVFP/{0}_pt_ST_{1}_SR_Spin32.dat UL16postVFP=UL16postVFP/{0}_pt_ST_{1}_SR_Spin32.dat UL17=UL17/{0}_pt_ST_{1}_SR_Spin32.dat UL18=UL18/{0}_pt_ST_{1}_SR_Spin32.dat > {0}_pt_ST_{1}_SR_Spin32.dat".format(masspoint, channel)
+                "combineCards.py UL16preVFP=UL16preVFP/{0}_pt_ST_{1}_SR_Spin32.dat UL16postVFP=UL16postVFP/{0}_pt_ST_{1}_SR_Spin32.dat > UL16/{0}_pt_ST_{1}_SR_Spin32.dat".format(masspoint, channel)
             )
 
         if (args.doVR and args.doSpin32):
             os.system(
-                "combineCards.py UL16preVFP=UL16preVFP/{0}_pt_ST_{1}_VR_Spin32.dat UL16postVFP=UL16postVFP/{0}_pt_ST_{1}_VR_Spin32.dat UL17=UL17/{0}_pt_ST_{1}_VR_Spin32.dat UL18=UL18/{0}_pt_ST_{1}_VR_Spin32.dat > {0}_pt_ST_{1}_VR_Spin32.dat".format(masspoint, channel)
+                "combineCards.py UL16preVFP=UL16preVFP/{0}_pt_ST_{1}_VR_Spin32.dat UL16postVFP=UL16postVFP/{0}_pt_ST_{1}_VR_Spin32.dat > UL16/{0}_pt_ST_{1}_VR_Spin32.dat".format(masspoint, channel)
             )
