@@ -1,0 +1,83 @@
+Combination of mu=1200_pt_ST_mu_VR.dat  ele=1200_pt_ST_ele_VR.dat
+imax 2 number of bins
+jmax 3 number of processes minus 1
+kmax 65 number of nuisance parameters
+----------------------------------------------------------------------------------------------------------------------------------
+shapes *    ele  1200_pt_ST_ele_VR.root $PROCESS $PROCESS_$SYSTEMATIC
+shapes *    mu   1200_pt_ST_mu_VR.root $PROCESS $PROCESS_$SYSTEMATIC
+----------------------------------------------------------------------------------------------------------------------------------
+bin          mu     ele  
+observation  -1     -1   
+----------------------------------------------------------------------------------------------------------------------------------
+bin                                                                        mu                 mu                 mu                 mu                 ele                ele                ele                ele              
+process                                                                    TstarTstar_M-1200  TTbar              datadriven         ST                 TstarTstar_M-1200  TTbar              datadriven         ST               
+process                                                                    0                  1                  2                  3                  0                  1                  2                  3                
+rate                                                                       -1                 -1                 -1                 -1                 -1                 -1                 -1                 -1               
+----------------------------------------------------------------------------------------------------------------------------------
+JEC_UL16postVFP         shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+JEC_UL16preVFP          shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+JEC_UL17                shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+JEC_UL18                shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+JER_UL16postVFP         shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+JER_UL16preVFP          shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+JER_UL17                shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+JER_UL18                shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+PDF_ST_UL16preVFPUL16postVFPUL17UL18   shape                               -                  -                  -                  1.0                -                  -                  -                  1.0              
+PDF_TTbar_UL16preVFPUL16postVFPUL17UL18   shape                            -                  1.0                -                  -                  -                  1.0                -                  -                
+PDF_TstarTstar_M-1200_UL16preVFPUL16postVFPUL17UL18   shape                1.0                -                  -                  -                  1.0                -                  -                  -                
+btagYield_ele_UL16preVFPUL16postVFPUL17UL18   shape                        -                  -                  -                  -                  1.0                1.0                -                  1.0              
+btagYield_mu_UL16preVFPUL16postVFPUL17UL18   shape                         1.0                1.0                -                  1.0                -                  -                  -                  -                
+btagging_cferr1_UL16preVFPUL16postVFPUL17UL18   shape                      1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+btagging_cferr2_UL16preVFPUL16postVFPUL17UL18   shape                      1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+btagging_hf_UL16preVFPUL16postVFPUL17UL18   shape                          1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+btagging_hfstats1_UL16postVFP   shape                                      1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+btagging_hfstats1_UL16preVFP   shape                                       1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+btagging_hfstats1_UL17   shape                                             1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+btagging_hfstats1_UL18   shape                                             1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+btagging_hfstats2_UL16postVFP   shape                                      1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+btagging_hfstats2_UL16preVFP   shape                                       1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+btagging_hfstats2_UL17   shape                                             1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+btagging_hfstats2_UL18   shape                                             1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+btagging_lf_UL16preVFPUL16postVFPUL17UL18   shape                          1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+btagging_lfstats1_UL16postVFP   shape                                      1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+btagging_lfstats1_UL16preVFP   shape                                       1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+btagging_lfstats1_UL17   shape                                             1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+btagging_lfstats1_UL18   shape                                             1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+btagging_lfstats2_UL16postVFP   shape                                      1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+btagging_lfstats2_UL16preVFP   shape                                       1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+btagging_lfstats2_UL17   shape                                             1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+btagging_lfstats2_UL18   shape                                             1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+btagging_total_UL16preVFPUL16postVFPUL17UL18   shape                       -                  -                  1.0                -                  -                  -                  1.0                -                
+datadrivenFitFunction_UL16preVFPUL16postVFPUL17UL18   shape                -                  -                  1.0                -                  -                  -                  1.0                -                
+datadrivenFitStat_UL16preVFPUL16postVFPUL17UL18   shape                    -                  -                  1.0                -                  -                  -                  1.0                -                
+decorrelation_UL16preVFPUL16postVFPUL17UL18   shape                        -                  1.0                -                  1.0                -                  1.0                -                  1.0              
+lumi_13TeV_total        lnN                                                1.016              1.016              -                  1.016              1.016              1.016              -                  1.016            
+prefiring_UL16postVFP   shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+prefiring_UL16preVFP    shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+prefiring_UL17          shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+prefiring_UL18          shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+pu_UL16preVFPUL16postVFPUL17UL18   shape                                   1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+scale_ST_UL16preVFPUL16postVFPUL17UL18   shape                             -                  -                  -                  1.0                -                  -                  -                  1.0              
+scale_TTbar_UL16preVFPUL16postVFPUL17UL18   shape                          -                  1.0                -                  -                  -                  1.0                -                  -                
+scale_TstarTstar_M-1200_UL16preVFPUL16postVFPUL17UL18   shape              1.0                -                  -                  -                  1.0                -                  -                  -                
+sfelec_id_UL16preVFPUL16postVFPUL17UL18   shape                            1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+sfelec_reco_UL16preVFPUL16postVFPUL17UL18   shape                          1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+sfelec_trigger_UL16postVFP   shape                                         1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+sfelec_trigger_UL16preVFP   shape                                          1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+sfelec_trigger_UL17     shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+sfelec_trigger_UL18     shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+sfmu_id_UL16postVFP     shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+sfmu_id_UL16preVFP      shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+sfmu_id_UL17            shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+sfmu_id_UL18            shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+sfmu_iso_UL16postVFP    shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+sfmu_iso_UL16preVFP     shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+sfmu_iso_UL17           shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+sfmu_iso_UL18           shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+sfmu_trigger_UL16postVFP   shape                                           1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+sfmu_trigger_UL16preVFP   shape                                            1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+sfmu_trigger_UL17       shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+sfmu_trigger_UL18       shape                                              1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+topPt_UL16preVFPUL16postVFPUL17UL18   shape                                1.0                1.0                -                  1.0                1.0                1.0                -                  1.0              
+mu autoMCStats 0 0 1
+ele autoMCStats 0 0 1
