@@ -1,4 +1,4 @@
-## Overview
+### Overview
 CADI: [B2G-22-005](https://cms.cern.ch/iCMS/analysisadmin/cadilines?line=B2G-22-005&tp=an&id=2597&ancode=B2G-22-005)
 This repository provides all nessecary information to reproduce the results of B2G-22-005: search for pair production of excited top quarks. Mainly, this involves combine datacards which can be used to produce signal & validation region distributions as well as exclusion limits and all other statistical tests. Information on other documentation is given at the bottom.
 
@@ -22,3 +22,6 @@ Post-fit shapes can be obtain using the [extract_post_fit_shapes.ipynb](https://
 
 ### Other statistical tests
 Other statistical tests can be ran using the various other notebooks, provided for GoF tests, impact plots and signal injection tests. The instructions for each of these steps are given as printouts in the respective notebooks.
+
+### Sample information & analysis code
+Full information on the samples used in this analysis, as well as the UFO models used to simulated the signal samples, can be found in the analysis note, and are therefore not repeated here. The analysis code itself can be found in [UHH2/tstartstar](https://github.com/UHH2/TstarTstar) which is based on the [UHH2 framework](https://github.com/UHH2/UHH2).
