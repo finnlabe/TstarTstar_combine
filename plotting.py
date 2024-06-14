@@ -44,7 +44,7 @@ def plotGoodnessOfFit(file_data, file_toys, xlim=[0, 250], xbins=20):
 # function to plot another line
 # expects a dictionary, where the keys are x and the content is y
 # content may be one or two numbers, the second being an uncertainty
-def plot_other_line(line, label, ax, linestyle=None, color=None, plotUncertainty=False):
+def plot_other_line(line, label, ax, linestyle=None, linewidth=None,color=None, plotUncertainty=False):
     
     x = list(line.keys())
     y = []
@@ -56,7 +56,7 @@ def plot_other_line(line, label, ax, linestyle=None, color=None, plotUncertainty
         if(len(y_tot)>1): err.append(y_tot[1])
        
     # plotting the line
-    ax.plot(x, y, label = label, linestyle = linestyle, color=color)
+    ax.plot(x, y, label = label, linestyle = linestyle, linewidth=linewidth, color=color)
 
     if plotUncertainty and len(y_tot) > 1:
         # plotting error band
@@ -66,7 +66,7 @@ def plot_other_line(line, label, ax, linestyle=None, color=None, plotUncertainty
         ax.fill_between(x, lows, highs, color = color, alpha=0.5)
        
     
-def plot_skeleton(year = None, text = "", data=False):
+def plot_skeleton(year = None, text = "", data=False, figsize=(10, 10)):
     
     if (year == "UL18"): lumi = 59.83
     elif (year == "UL17"): lumi = 41.48
@@ -75,7 +75,7 @@ def plot_skeleton(year = None, text = "", data=False):
         
     if year: year = year.replace("UL", "20")
         
-    fig, ax = plt.subplots(figsize=(10, 10))
+    fig, ax = plt.subplots(figsize=figsize)
     hep.cms.label(text, lumi=lumi, year=year, data=data, loc=1)
     
     return fig, ax

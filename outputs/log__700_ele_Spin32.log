@@ -1,0 +1,181 @@
+ <<< Combine >>> 
+>>> random number generator seed is 123456
+Will use a-priori expected background instead of a-posteriori one.
+>>> method used is AsymptoticLimits
+Channel SR will use autoMCStats with settings: event-threshold=0, include-signal=0, hist-mode=1
+============================================================
+Analysing bin errors for: prop_binSR
+Poisson cut-off: 0
+Processes excluded for sums: TstarTstar_Spin32_M-700
+============================================================
+Bin        Contents        Error           Notes                         
+0          0.000000        0.000000        total sum                     
+0          0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+1          0.000000        0.000000        total sum                     
+1          0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+2          0.000000        0.000000        total sum                     
+2          0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+3          0.000000        0.000000        total sum                     
+3          0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+4          0.000000        0.000000        total sum                     
+4          0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+5          26983.874626    35.742605       total sum                     
+5          26983.440308    35.742588       excluding marked processes    
+5          569931.000000   754.937746      Unweighted events, alpha=0.047346
+  => Total parameter prop_binSR_bin5[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+6          27529.031038    36.257138       total sum                     
+6          27528.399536    36.257116       excluding marked processes    
+6          576468.000000   759.254898      Unweighted events, alpha=0.047755
+  => Total parameter prop_binSR_bin6[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+7          22653.513362    32.819610       total sum                     
+7          22652.585327    32.819577       excluding marked processes    
+7          476398.000000   690.215908      Unweighted events, alpha=0.047552
+  => Total parameter prop_binSR_bin7[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+8          15782.447334    27.372532       total sum                     
+8          15781.053284    27.372462       excluding marked processes    
+8          332387.000000   576.530138      Unweighted events, alpha=0.047482
+  => Total parameter prop_binSR_bin8[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+9          10555.151915    22.379474       total sum                     
+9          10553.482574    22.379383       excluding marked processes    
+9          222380.000000   471.571840      Unweighted events, alpha=0.047464
+  => Total parameter prop_binSR_bin9[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+10         7031.254897     18.292515       total sum                     
+10         7029.090729     18.292353       excluding marked processes    
+10         147659.000000   384.264232      Unweighted events, alpha=0.047618
+  => Total parameter prop_binSR_bin10[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+11         4729.849346     15.220858       total sum                     
+11         4727.186707     15.220631       excluding marked processes    
+11         96458.000000    310.576883      Unweighted events, alpha=0.049035
+  => Total parameter prop_binSR_bin11[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+12         3156.718859     12.331358       total sum                     
+12         3153.778671     12.331046       excluding marked processes    
+12         65413.000000    255.759653      Unweighted events, alpha=0.048258
+  => Total parameter prop_binSR_bin12[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+13         2146.035017     10.176058       total sum                     
+13         2143.112511     10.175689       excluding marked processes    
+13         44357.000000    210.611016      Unweighted events, alpha=0.048381
+  => Total parameter prop_binSR_bin13[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+14         1464.165260     8.465140        total sum                     
+14         1461.020618     8.464656        excluding marked processes    
+14         29792.000000    172.603592      Unweighted events, alpha=0.049146
+  => Total parameter prop_binSR_bin14[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+15         996.176227      6.959112        total sum                     
+15         993.123791      6.958541        excluding marked processes    
+15         20369.000000    142.720006      Unweighted events, alpha=0.048906
+  => Total parameter prop_binSR_bin15[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+16         700.784565      5.896205        total sum                     
+16         697.795929      5.895543        excluding marked processes    
+16         14009.000000    118.359621      Unweighted events, alpha=0.050024
+  => Total parameter prop_binSR_bin16[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+17         499.819610      4.935651        total sum                     
+17         497.023417      4.934908        excluding marked processes    
+17         10144.000000    100.717426      Unweighted events, alpha=0.049272
+  => Total parameter prop_binSR_bin17[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+18         343.936853      4.102870        total sum                     
+18         341.409071      4.102064        excluding marked processes    
+18         6927.000000     83.228601       Unweighted events, alpha=0.049652
+  => Total parameter prop_binSR_bin18[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+19         255.165818      3.558059        total sum                     
+19         252.851270      3.557212        excluding marked processes    
+19         5053.000000     71.084457       Unweighted events, alpha=0.050498
+  => Total parameter prop_binSR_bin19[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+20         187.686833      3.060034        total sum                     
+20         185.564543      3.059108        excluding marked processes    
+20         3680.000000     60.663004       Unweighted events, alpha=0.051002
+  => Total parameter prop_binSR_bin20[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+21         137.020911      2.604960        total sum                     
+21         135.081120      2.603963        excluding marked processes    
+21         2691.000000     51.874849       Unweighted events, alpha=0.050918
+  => Total parameter prop_binSR_bin21[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+22         97.839418       2.243020        total sum                     
+22         96.044669       2.241876        excluding marked processes    
+22         1835.000000     42.836900       Unweighted events, alpha=0.053318
+  => Total parameter prop_binSR_bin22[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+23         74.495772       1.967617        total sum                     
+23         72.925006       1.966461        excluding marked processes    
+23         1375.000000     37.080992       Unweighted events, alpha=0.054179
+  => Total parameter prop_binSR_bin23[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+24         54.803229       1.664323        total sum                     
+24         53.573303       1.663373        excluding marked processes    
+24         1037.000000     32.202484       Unweighted events, alpha=0.052848
+  => Total parameter prop_binSR_bin24[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+25         43.999211       1.508343        total sum                     
+25         42.729380       1.507122        excluding marked processes    
+25         804.000000      28.354894       Unweighted events, alpha=0.054725
+  => Total parameter prop_binSR_bin25[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+26         31.681376       1.280851        total sum                     
+26         30.661880       1.279804        excluding marked processes    
+26         574.000000      23.958297       Unweighted events, alpha=0.055194
+  => Total parameter prop_binSR_bin26[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+27         26.265690       1.184057        total sum                     
+27         25.338742       1.182951        excluding marked processes    
+27         459.000000      21.424285       Unweighted events, alpha=0.057224
+  => Total parameter prop_binSR_bin27[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+28         20.290800       1.047706        total sum                     
+28         19.545309       1.046778        excluding marked processes    
+28         349.000000      18.681542       Unweighted events, alpha=0.058140
+  => Total parameter prop_binSR_bin28[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+29         17.159515       0.966264        total sum                     
+29         16.395952       0.965117        excluding marked processes    
+29         289.000000      17.000000       Unweighted events, alpha=0.059375
+  => Total parameter prop_binSR_bin29[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+30         22.125034       1.064931        total sum                     
+30         20.584571       1.062977        excluding marked processes    
+30         375.000000      19.364917       Unweighted events, alpha=0.059000
+  => Total parameter prop_binSR_bin30[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+31         25.213953       1.155801        total sum                     
+31         22.699580       1.152630        excluding marked processes    
+31         388.000000      19.697716       Unweighted events, alpha=0.064984
+  => Total parameter prop_binSR_bin31[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+32         6.378530        0.632307        total sum                     
+32         5.341079        0.630135        excluding marked processes    
+32         72.000000       8.485281        Unweighted events, alpha=0.088591
+  => Total parameter prop_binSR_bin32[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+SimNLL created with 1 channels, 0 generic constraints, 92 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
+
+ -- AsymptoticLimits ( CLs ) --
+Expected  2.5%: r < 1.6151
+Expected 16.0%: r < 2.1930
+Expected 50.0%: r < 3.1562
+Expected 84.0%: r < 4.6282
+Expected 97.5%: r < 6.6277
+
+Done in 0.06 min (cpu), 0.06 min (real)
