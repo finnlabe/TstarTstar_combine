@@ -197,6 +197,32 @@ def get_theory_line(spin, source):
         3000: [0.000000896, 0.000000001867],
     }
     
+    # t*t results for comparison!
+    # generated with these commands:
+    # generate p p > tstar t~
+    # add process p p > tstar~ t
+    results_singletstar_spin32_fromMG = {
+        700: [5.065, 0.01],
+        1000: [0.3988, 0.0009432],
+        1300: [0.05748, 0.0001348],
+        1600: [0.01172, 2.268e-05],
+        1900: [0.00299, 6.094e-06],
+        2200: [0.0008882, 1.717e-06],
+        2500: [0.0002939, 5.759e-07],
+        3000: [5.51e-05, 9.068e-08],
+    }
+    
+    results_singletstar_spin12_fromMG = {
+        700: [0.4279, 0.0006065],
+        1000: [0.1517, 0.0002844],
+        1300: [0.06134, 0.0001187],
+        1600: [0.02698, 4.303e-05],
+        1900: [0.01249, 2.229e-05],
+        2200: [0.005992, 9.936e-06],
+        2500: [0.002946, 4.942e-06],
+        3000: [0.0009207, 1.497e-06],
+    }
+    
     branching_fraction = 0.97 * 0.97
     
     results_spin32_fromMG_withBR = {mass : [results_spin32_fromMG[mass][0] * branching_fraction, results_spin32_fromMG[mass][1] * branching_fraction] for mass in results_spin32_fromMG}
@@ -207,9 +233,11 @@ def get_theory_line(spin, source):
     elif (spin == 0.5 and source == "TheoryPaper"):      return results_spin12_theoryPaper
     elif (spin == 0.5 and source == "MadGraph"):         return results_spin12_fromMG_withBR
     elif (spin == 0.5 and source == "MadGraph noBR"):    return results_spin12_fromMG
+    elif (spin == 0.5 and source == "singletstar"):      return results_singletstar_spin12_fromMG
     elif (spin == 1.5 and source == "AnalysisNote"):     return results_spin32_prevAnalysis
     elif (spin == 1.5 and source == "TheoryPaper"):      return results_spin32_theoryPaper
     elif (spin == 1.5 and source == "MadGraph"):         return results_spin32_fromMG_withBR
     elif (spin == 1.5 and source == "MadGraph noBR"):    return results_spin32_fromMG
+    elif (spin == 1.5 and source == "singletstar"):      return results_singletstar_spin32_fromMG
     else: raise Exception("Mode not recognized!")
    

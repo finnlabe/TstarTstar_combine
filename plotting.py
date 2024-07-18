@@ -66,16 +66,17 @@ def plot_other_line(line, label, ax, linestyle=None, linewidth=None,color=None, 
         ax.fill_between(x, lows, highs, color = color, alpha=0.5)
        
     
-def plot_skeleton(year = None, text = "", data=False, figsize=(10, 10)):
+def plot_skeleton(year = None, text = "", data=False, figsize=(10, 10), exp="CMS", loc=1):
     
     if (year == "UL18"): lumi = 59.83
     elif (year == "UL17"): lumi = 41.48
     elif (year == "UL16"): lumi = 36.31
-    elif (year == None): lumi = 138
+    elif (year == "run2"): lumi = 138
+    else: lumi = None
         
     if year: year = year.replace("UL", "20")
         
     fig, ax = plt.subplots(figsize=figsize)
-    hep.cms.label(text, lumi=lumi, year=year, data=data, loc=1)
+    hep.cms.label(text, lumi=lumi, year=None, data=data, loc=loc, exp=exp)
     
     return fig, ax
